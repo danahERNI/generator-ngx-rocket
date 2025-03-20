@@ -156,5 +156,8 @@
       }
     }
   },
-  "defaultProject": "generator-ngx-rocket"
+  "defaultProject": "generator-ngx-rocket",
+  "cli": {
+    "analytics": false
+  }
 }
