@@ -97,7 +97,7 @@ jobs:
             zip -r danah.zip ./
   
         - name: Upload ZIP artifact
-          uses: actions/upload-artifact@v3
+          uses: actions/upload-artifact@v4
           with:
             name: danah
             path: danah.zip
