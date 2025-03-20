@@ -53,11 +53,11 @@ jobs:
         run: |
           sudo lsof -t -i:4200 | xargs -r kill -9 || true
 
-      - name: 🌐 Start App in Background
-        run: |
-          npm run start &
-          echo $! > pid.txt
-          sleep 20
+      # - name: 🌐 Start App in Background
+      #   run: |
+      #     npm run start &
+      #     echo $! > pid.txt
+      #     sleep 20
 
       - name: 🧪 Run Cypress E2E Tests
         run: npm run cypress:run
